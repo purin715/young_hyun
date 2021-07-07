@@ -1,5 +1,5 @@
 .young_header_logo {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     font-family: 'Otomanopee One', sans-serif;
 }
 
@@ -8,10 +8,10 @@
 }
 
 .young_footer_logo {
-    margin: 1.5rem;
+    margin: 1.5rem 0;
     font-family: 'Otomanopee One', sans-serif;
 }
 
 .young_footer_btn {
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
