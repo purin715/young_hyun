@@ -4,4 +4,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def young(request):
-    return render(request, 'accountapp/young.html')
+    if request.method == 'POST':
+        return render(request, 'accountapp/young.html', context={'text':'POST METHOD!'})
+    else:
+        return render(request, 'accountapp/young.html', context={'text': 'GET METHOD!'})
