@@ -38,7 +38,7 @@ class AccountCreateView(CreateView):
 
     def get_success_url(self):
         return reverse('accountapp:detail', kwargs={'pk': self.object.pk})
-    
+
 class AccountDetailView(DetailView):
     model = User
     context_object_name = 'target_user'
