@@ -1,8 +1,7 @@
 .young_header_logo {
     margin: 2rem 0;
     font-family: 'Archivo', sans-serif;
-    color: lightsalmon;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: black;
 }
 
 .young_header_btn {
