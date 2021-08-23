@@ -8,6 +8,14 @@
     margin-bottom: 2rem;
 }
 
+.young_header_btn span a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+}
+
 .young_footer_logo {
     margin: 1.5rem 0;
     font-family: 'Archivo', sans-serif;
