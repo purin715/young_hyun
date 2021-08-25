@@ -9,11 +9,7 @@
 }
 
 .young_header_btn span a {
-    color: orangered;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }
 
 .young_footer_logo {
@@ -78,4 +74,13 @@
         /* defalut font-size = 16px */
         font-size: 13px;
     }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
 }
