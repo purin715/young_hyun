@@ -8,6 +8,15 @@
         <div class="my-5">
             {# 게시글 제목, 글쓴이, 작성일자 #}
             <h1 class="NNS_B">{{ target_article.title }}</h1>
+            <div>
+                <a href="{% url 'likeapp:article_like' article_pk=target_article.pk %}"
+                class="material-icons">
+                    favorite
+                </a>
+                <span>
+                    {{ target_article.like }}
+                </span>
+            </div>
             <h4>{{ target_article.writer.profile.nickname }}</h4>
             <p>{{ target_article.created_at }}</p>
         </div>
@@ -40,7 +49,7 @@
 
         <div class="text-center my-4">
             {# 댓글 작성 폼 및 댓글 #}
-
+            {# models.py에 article을 related_name=comment로 설정해놨기 때문 #}
             {% for comment in target_article.comment.all %}
 
                 <div class="comment_box">
@@ -57,8 +66,8 @@
                     </div>
                     {% if comment.writer == user %}
                     <div style="text-align: right">
-                        <a href="{% url 'commentapp:delete' pk=comment.pk%}"
-                            class="btn btn-danger rounded-pill px-5">
+                        <a href="{% url 'commentapp:delete' pk=comment.pk %}"
+                            class="btn btn-danger rounded-pill px-5 ">
                             Delete
                         </a>
                     </div>
