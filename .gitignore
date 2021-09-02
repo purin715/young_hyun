@@ -84,3 +84,6 @@ __pycache__/
 media/
 
 staticfiles/
+
+younghyun_gcp
+younghyun_gcp.pub
