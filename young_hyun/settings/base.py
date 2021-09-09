@@ -15,7 +15,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 from django.urls import reverse_lazy
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 env_list = dict()
 
@@ -39,7 +39,7 @@ while True:
 SECRET_KEY = 'django-insecure-&i)0^u1x3&vl3)ko$pg+%)sqo#j7^#47zxn7is4q6^_up838b$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
