@@ -5,6 +5,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy, reverse
 from django.utils.decorators import method_decorator
 from django.views.generic import CreateView, DetailView, ListView
+from django.views.generic.list import MultipleObjectMixin
 
 from articleapp.models import Article
 from projectapp.forms import ProjectCreationForm
@@ -22,7 +23,7 @@ class ProjectCreateView(CreateView):
     def get_success_url(self):
         return reverse('projectapp:detail', kwargs={'pk':self.object.pk})
 
-class ProjectDetailView(DetailView):
+class ProjectDetailView(DetailView, MultipleObjectMixin):
     model = Project
     context_object_name = 'target_project'
     template_name = 'projectapp/detail.html'
